@@ -1,0 +1,74 @@
+.sxema {
+  display: flex;
+  justify-content: space-between;
+  &__wrap {
+    width: 496px;
+   
+    
+  }
+  &__dogovor {
+    width: 446px;
+  }
+  &__text {
+    @include sxema-text;
+  }
+  &__subtitle {
+    @include sxema-subtitle;
+  }
+  &__zayavka {
+    margin-top: 99px;
+    
+    background: url(../../img/Frame\ \(1\).png)no-repeat;
+    height: 259px;
+  }
+  &__object {
+    margin-top: 100px;
+    background: url(../../img/Frame2.png) no-repeat;
+    height: 254px;
+  }
+  &__dogovor{
+    margin-top: 56px;
+  }
+  &__wrapper {
+    margin-top: 249px;
+    width: 625px;
+    
+  }
+  &_consultation{
+    // margin-top: 999px;
+  }
+  &__title {
+    @include wozdux-hero;
+    font-size: 35px;
+  }
+  &__headline{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    @include sxema-subtitle;
+
+  }
+  &__obrabotca {  
+    @include sxema-text;
+    text-align: end;
+  }
+  &__consultation {
+  }
+  &__grafic {
+    margin-top: 207px;
+  }
+  &__montaj{
+    margin-top: 207px;
+  }
+  &__footertitle {
+    margin-top: 121px;
+    @include sxema-subtitle;
+    display: flex;
+    justify-content: center;align-items: center;
+    background: url(../../img/Frame3.png)no-repeat;
+    height: 99px;
+    background-position:  50%  30%;
+  }
+
+
+}

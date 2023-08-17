@@ -1,0 +1,20 @@
+#portfolio {
+    margin-top: 100px;
+}
+.portfolio {
+    &__title {
+        @include wozdux-hero;
+        font-size: 45px;
+        width: 364px;
+    }
+    &__text {
+        @include text-colors-fonts;
+        width: 641px;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}

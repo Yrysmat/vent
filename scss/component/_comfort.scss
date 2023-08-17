@@ -1,0 +1,126 @@
+#comfort {
+  margin-top: 200px;
+}
+
+.comfort {
+  display: flex;
+  justify-content: space-between;
+  &__wrap {
+    width: 495px;
+  }
+  &__title {
+    @include wozdux-hero;
+    bottom: 50px;
+    font-size: 45px;
+    width: 495px;
+  }
+  &__img {
+    margin-left: 15px;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 20px;
+      border: 1px solid var(--unnamed, #78c081);
+      width: 70px;
+      height: 40px;
+      padding: 10px 19px 7px 19px;
+    }
+  }
+  &__images {
+    left: 50px !important;
+  }
+  &__subtitle {
+    color: #7ca381;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 12px;
+    width: 437px;
+    &::before {
+      content: "";
+      border-radius: 20px;
+      background: var(--unnamed, #78c081);
+      width: 7px;
+      height: 7px;
+    }
+  }
+  &__text {
+    margin-top: 25px;
+    width: 498px;
+    color: #848484;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  &__span {
+    color: #848484;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 26px;
+  }
+  &__btn {
+    @include button-nav;
+    padding: 32px 147px 32px 118px;
+    border-radius: 30px;
+    margin-top: 97px;
+    box-shadow: 2px -2px 12px 0 $button-green-shadow inset,
+      0 0 0 10px $comfort-border-color;
+  }
+  &__condi {
+    background: url(../../img/condi.png);
+    width: 273px;
+    height: 358px;
+    border-radius: 39px;
+    margin-bottom: 20px;
+    // box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+  }
+  &__truba {
+    background: url(../../img/truba.png);
+    width: 267px;
+    height: 350px;
+    border-radius: 39px;
+    margin-bottom: 30px;
+  }
+  &__image {
+    // display: flex;
+    // justify-content: space-around;
+    margin-bottom: 100px;
+    margin-right: 20px;
+  }
+  &__mebel {
+    background: url(../../img/mebel.png) no-repeat;
+    width: 273px;
+    height: 424px;
+    border-radius: 39px;
+  }
+  &__potolok {
+    width: 267px;
+    height: 294px;
+    background: url(../../img/potolok.png) no-repeat;
+    border-radius: 39px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 718px;
+      height: 718px;
+      border-radius: 718px;
+      background: rgba(186, 255, 195, 0.5);
+      filter: blur(175px);
+      z-index: -1;
+    }
+  }
+  &__images {
+    background-position: center top;
+    margin-top: 50px;
+  }
+}

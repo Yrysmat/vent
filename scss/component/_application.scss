@@ -1,0 +1,40 @@
+#application {
+  background: url(../../img/zayevka.png) no-repeat;
+  height: 271px;
+  background: $backgraund-icon;
+  // padding-bottom: 58px;
+  margin-top: 106px;
+  // background: url(../../img/zayevka.png) no-repeat;
+  &::before {
+    content: "";  
+  }
+}
+.application {
+  &__title {
+    @include wozdux-hero;
+    font-size: 35px;
+    padding-top: 55px;
+  }
+  &__name {
+    background: #fff;
+    width: 290px;
+    height: 57px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px 0px rgba(73, 93, 76, 0.15);
+    margin: 0 15px 0 15px;
+    color: rgba(124, 163, 129, 0.7);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__btn {
+    margin-left: 60px;
+    width: 209px;
+    height: 55px;
+    border-radius: 17px;
+    background: #9cd3a3;
+    box-shadow: 2px -2px 12px 0px rgba(34, 111, 33, 0.36) inset;
+  }
+}

@@ -1,0 +1,131 @@
+#peculiarities {
+  margin-top: 100px;
+}
+
+.peculiarities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__wrap {
+    width: 531px;
+    height: 580px;
+    border-radius: 50px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(73, 93, 76, 0.1);
+    &::before {
+      content: "";
+      position: absolute;
+      width: 656px;
+      height: 499px;
+      border-radius: 656px;
+      background: rgba(186, 255, 195, 0.5);
+      filter: blur(100px);
+      z-index: -1;
+      left: 50px;
+    }
+  }
+  &__title {
+    @include wozdux-hero;
+    padding-top: 33px;
+    font-size: 45px;
+    padding-left: 30px;
+  }
+  &__subtitle {
+    color: var(--unnamed, #78c081);
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 45px;
+    padding-right: 168px;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 1.5px;
+      background: var(--unnamed, #78c081);
+      width: 166px;
+      height: 1px;
+    }
+  }
+  &__vent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__headline {
+    @include wozdux-hero;
+    font-size: 45px;
+    margin-left: 45px;
+  }
+  &__text {
+    padding-bottom: 20px;
+    width: 485px;
+    padding-left: 46px;
+    color: #848484;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  &__span {
+    color: #848484;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 26px;
+  }
+  &__lead {
+    color: var(--unnamed, #78c081);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__staje {
+    color: var(--unnamed, #78c081);
+    font-family: Roboto;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  &__slogan {
+    color: #7ca381;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 198px;
+  }
+  &__between {
+    display: flex;
+    justify-content: space-between;
+    // margin-right: 96px;
+    margin-bottom: 93px;
+    // margin-top: 220px;
+  }
+  &__grid {
+    margin: 40px 40px 40px 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 182px;
+      height: 182px;
+      border-radius: 656px;
+      background: rgba(186, 255, 195, 0.5);
+      filter: blur(50px);
+      z-index: -1;
+    }
+  }
+}
